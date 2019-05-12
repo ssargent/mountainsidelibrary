@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mountainsidelibrary.webapp:
+    image: ${DOCKER_REGISTRY}mountainsidelibrarywebapp
+    build:
+      context: .
+      dockerfile: MountainSideLibrary.WebApp/Dockerfile
